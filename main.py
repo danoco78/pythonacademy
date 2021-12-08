@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 from choice1 import par_impar
-
+from choice2 import bigger_number
 
 def print_menu():
     os.system("cls")
@@ -9,7 +9,7 @@ def print_menu():
     print("------------------------------")
     print("1. Verificar que un número es par o impar")
     print("2. Que número es mayor")
-    print("3. Los números pares desde 1 hasta un valor dado")
+    print("3. Los números pares desde 0 hasta un valor dado")
     print("4. Suma acumulada de números de una lista")
     print("5. Tabla de multiplicar de un número dado")
     print("6. Busqueda de palabras palindromas en una lista dada")
@@ -25,3 +25,5 @@ while choice.upper() != "Q":
     choice = input("Por favor elije tu opción ")
     if(choice == "1"):
         choice = par_impar()
+    elif(choice == "2"):
+        choice = bigger_number()
