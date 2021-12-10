@@ -3,6 +3,7 @@ import os
 from choice1 import par_impar
 from choice2 import bigger_number
 from choice3 import pair_numbers
+from choice4 import accumulated_numbers
 
 def print_menu():
     os.system("cls")
@@ -30,3 +31,5 @@ while choice.upper() != "Q":
         choice = bigger_number()
     elif(choice == "3"):
         choice = pair_numbers()
+    elif(choice == "4"):
+        choice = accumulated_numbers()
