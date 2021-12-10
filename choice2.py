@@ -1,11 +1,11 @@
 def bigger_number():
     print("Ingresa los números que deseas evaluar")
-    number1 = input("digita el primer número que deseas evaluar...:")
-    number2 = input("digita el segundo número que deseas evaluar...:")
+    number1 = int(input("digita el primer número que deseas evaluar...:"))
+    number2 = int(input("digita el segundo número que deseas evaluar...:"))
     try:
-        if(int(number1) > int(number2)):
+        if(number1 > number2):
             print(f"el número {number1} es el mayor")
-        elif(int(number2) > int(number1)):
+        elif(number2 > number1):
             print(f"el número {number2} es el mayor")
         else:
             print("ambos números son iguales")

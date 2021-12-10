@@ -2,21 +2,17 @@ def accumulated_numbers():
     number = input("digita la lista de números separados por puto y coma ; ...:")
     try:
         numbers= number.split(";")
-        print(numbers)
-        print(type(numbers))
         accumulated = []
         n = len(numbers)
         p = 0
         while p < n:
             if(p == 0):
                 accumulated.append(int(numbers[p]))
-                print(accumulated)
             else:
                 accumulated.append(int(numbers[p])+int(numbers[p-1]))
-                print(accumulated)
-            
+
             p+=1
-        
+
         print(f"la lista de numeros ingresada fue: {numbers}")
         print(f"la lista de numeros acumulada es: {accumulated}")
         input("Presiona enter para continuar")

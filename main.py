@@ -4,9 +4,10 @@ from choice1 import par_impar
 from choice2 import bigger_number
 from choice3 import pair_numbers
 from choice4 import accumulated_numbers
+from choice5 import multiplication_table
 
 def print_menu():
-    os.system("cls")
+    os.system("clear")
     print("Que programa deseas ejecutar?")
     print("------------------------------")
     print("1. Verificar que un número es par o impar")
@@ -18,7 +19,6 @@ def print_menu():
     print("7. identificar una lista con valores duplicados")
     print("Q - Salir del programa")
     print("------------------------------")
-#    print("\n")
 
 
 choice = ""
@@ -33,3 +33,5 @@ while choice.upper() != "Q":
         choice = pair_numbers()
     elif(choice == "4"):
         choice = accumulated_numbers()
+    elif(choice == "5"):
+        choice = multiplication_table()

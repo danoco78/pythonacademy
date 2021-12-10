@@ -1,7 +1,7 @@
 def par_impar():
-    number = input("digita el número que deseas evaluar...:")
+    number = int(input("digita el número que deseas evaluar...:"))
     try:
-        if(abs(int(number)) % 2 == 0):
+        if(abs(number) % 2 == 0):
             print("el número es par")
         else:
             print("El número es impar")
