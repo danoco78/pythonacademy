@@ -1,25 +1,12 @@
 # -*- coding: utf-8 -*-
-import os
+from menu import print_menu
 from choice1 import par_impar
 from choice2 import bigger_number
 from choice3 import pair_numbers
 from choice4 import accumulated_numbers
 from choice5 import multiplication_table
-
-def print_menu():
-    os.system("clear")
-    print("Que programa deseas ejecutar?")
-    print("------------------------------")
-    print("1. Verificar que un número es par o impar")
-    print("2. Que número es mayor")
-    print("3. Los números pares desde 0 hasta un valor dado")
-    print("4. Suma acumulada de números de una lista")
-    print("5. Tabla de multiplicar de un número dado")
-    print("6. Busqueda de palabras palindromas en una lista dada")
-    print("7. identificar una lista con valores duplicados")
-    print("Q - Salir del programa")
-    print("------------------------------")
-
+from choice6 import palindromos
+from choice7 import duplicate_values
 
 choice = ""
 while choice.upper() != "Q":
@@ -35,3 +22,7 @@ while choice.upper() != "Q":
         choice = accumulated_numbers()
     elif(choice == "5"):
         choice = multiplication_table()
+    elif(choice == "6"):
+        choice = palindromos()
+    elif(choice == "7"):
+        choice = duplicate_values()
